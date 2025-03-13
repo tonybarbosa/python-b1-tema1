@@ -57,7 +57,7 @@ def sum_odd_numbers(list_numbers):
             if list_numbers[i] % 2 != 0:
                 sum = sum + list_numbers[i]
     return sum
-print(sum_odd_numbers([]))    
+print(sum_odd_numbers())    
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
