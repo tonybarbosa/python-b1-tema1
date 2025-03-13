@@ -47,7 +47,7 @@ Exemple:
 
 def mult_recursive(value, times):
     # Write here your code
-    pass
+    return value*times
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
