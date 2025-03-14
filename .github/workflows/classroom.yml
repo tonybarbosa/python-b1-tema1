@@ -16,13 +16,12 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v5
-        with:
-          python-version: ${{ matrix.python-version }}
-      # You can test your matrix by printing the current Python version
-      - name: Display Python version
-        run: python -c "import sys; print(sys.version)"
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}      
+    - name: Display Python version
+      run: python -c "import sys; print(sys.version)"
     - name: py_1a_ej1a1_test
       id: py_1a_ej1a1_test
       uses: classroom-resources/autograding-command-grader@v1
