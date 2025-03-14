@@ -9,10 +9,20 @@ permissions:
 jobs:
   run-autograding-tests:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.12", "3.13"]
     if: github.actor != 'github-classroom[bot]'
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      # You can test your matrix by printing the current Python version
+      - name: Display Python version
+        run: python -c "import sys; print(sys.version)"
     - name: py_1a_ej1a1_test
       id: py_1a_ej1a1_test
       uses: classroom-resources/autograding-command-grader@v1
@@ -100,7 +110,7 @@ jobs:
       with:
         test-name: py_1c_ej1c2_test
         setup-command: sudo -H pip install -r requirements.txt
-        command: pytest 1c/ej1c2_test
+        command: pytest 1c/ej1c2_test.py
         timeout: 10
         max-score: 1
     - name: py_1c_ej1c3_test
