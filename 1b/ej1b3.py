@@ -51,8 +51,18 @@ import matplotlib.pyplot as plt
 # Esta función deberá configurar la gráfica en la variable plt
 # Aquesta funció haurà de configurar la gràfica en la variable plt
 def line_graph(x, y):
-    # Write here your code
-    pass
+    fig, ax = plt.subplots()
+    ax.set_facecolor("white") 
+    ax.plot(x, y, linewidth=2, marker="o", color="red")
+    ax.set_xlim(left=0) 
+    ax.set_ylim(bottom=0)
+    ax.set_title(label="Graph", fontdict = {"fontsize": 14, "fontweight": "bold", "color": "red"}, loc='center')
+    ax.set_xlabel(xlabel="Axis X", fontdict={"fontsize": 10, "fontweight": "bold", "color": "black"})
+    ax.set_ylabel(ylabel="Axis Y", fontdict={"fontsize": 10, "fontweight": "bold", "color": "black"})
+    ax.grid(visible=True, which='major', axis='both')
+    plt.show()
+#print(line_graph([1, 2, 3, 4, 5], [2, 4, 6, 8, 10]))
+    
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script

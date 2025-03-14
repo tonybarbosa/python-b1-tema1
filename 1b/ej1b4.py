@@ -65,8 +65,13 @@ Exemple:
 import numpy as np
 
 def results(list_numbers):
-    # Write here your code
-    pass
+    if not all(isinstance(i, (int, float))for i in list_numbers):
+        raise ValueError("La lista es incorrecta.") 
+    else:
+        prom = np.mean(list_numbers)
+        desv = np.std(list_numbers)
+    return prom, desv
+print(results([1,2,3,4]))
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
