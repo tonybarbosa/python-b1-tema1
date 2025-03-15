@@ -1,5 +1,4 @@
 # Tema 1. Estrategias algorítmicas
-
 ## 🗒️ Requisitos
 
 Para realizar los ejercicios de este tema deberás haber realizado los ejercicios del tema 0.
@@ -11,7 +10,6 @@ Para instalar las librerías necesarias para este tema debes ejecutar el siguien
 ```bash
 pip install -r requirements.txt
 ```
-
 > Nota: El archivo 'requirements.txt' no está dentro de ninguna carpeta.
 
 ## 📝 Enunciados
