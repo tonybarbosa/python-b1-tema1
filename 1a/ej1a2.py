@@ -42,22 +42,8 @@ Exemple:
 '''
 
 def sum_odd_numbers(list_numbers):
-    if isinstance(list_numbers, list):
-        print("Es una lista válida.")
-    else:
-        return ("No es una lista.")
-        
-    i = 0
-    long = len(list_numbers)
-    sum = 0
-    for i in range(long):
-        if not isinstance(list_numbers[i], int) or list_numbers[i] < 0:
-            raise ValueError("La lista es incorrecta.") 
-        else:
-            if list_numbers[i] % 2 != 0:
-                sum = sum + list_numbers[i]
-    return sum
-print(sum_odd_numbers())    
+    # Write here your code
+    pass
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
