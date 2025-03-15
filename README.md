@@ -1,5 +1,4 @@
 # Tema 1. Estrategias algorítmicas
-
 ## 🗒️ Requisitos
 
 Para realizar los ejercicios de este tema deberás haber realizado los ejercicios del tema 0.
