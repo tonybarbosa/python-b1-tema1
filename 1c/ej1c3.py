@@ -38,12 +38,8 @@ Exemple:
 
 
 def find_max(lst):
-    if len(lst) == 1:
-        return lst[0]
-    else:
-        last = lst.pop()
-        return max(last, find_max(lst))
-print(find_max([1, 5, 2, 7,83]))
+    # Write here your code
+    pass
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script

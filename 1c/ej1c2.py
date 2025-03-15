@@ -36,14 +36,8 @@ Exemple
 
 
 def invert_list(lst):
-    if not isinstance(lst, list):
-        return ValueError("La lista no es correcta")   
-    else:
-        if len(lst) <= 0:
-            return lst
-        else: 
-            return [lst[-1]] + invert_list(lst[:-1])
-print(invert_list([1, 20, 3, 40, 5]))
+    # Write here your code
+    pass
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script

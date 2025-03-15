@@ -41,16 +41,8 @@ Exemple:
 
 
 def is_palindrome(word):
-    if not isinstance(word, str):
-        return ValueError("No es una cadena.")
-    if len(word) <= 1:
-        return True
-    elif word[0] != word[-1]:
-        return False
-    else:
-        return (is_palindrome(word[1:-1]))
-
-print(is_palindrome("ojos"))
+    # Write here your code
+    pass
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
