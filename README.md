@@ -10,7 +10,6 @@ Para instalar las librerías necesarias para este tema debes ejecutar el siguien
 ```bash
 pip install -r requirements.txt
 ```
-
 > Nota: El archivo 'requirements.txt' no está dentro de ninguna carpeta.
 
 ## 📝 Enunciados
