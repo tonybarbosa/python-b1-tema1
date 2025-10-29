@@ -37,10 +37,15 @@ Exemple
 
 def invert_list(lst):
     # Write here your code
-    pass
+    #print(lista[-1])
+    if len(lst)==0:
+        
+        return []
+    else:
+        return [lst[-1]] + invert_list(lst[:-1])
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-# lst = [1, 20, 3, 40, 5]
-#print(invert_list(lst))
+lst = [1, 20, 3, 40, 5]
+print(invert_list(lst))

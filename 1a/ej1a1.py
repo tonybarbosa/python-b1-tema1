@@ -41,7 +41,6 @@ Exemple:
 
 def fibonacci(fibonacci_number):
     # Write here your code
-    def fibonacci(fibonacci_number):
 #    print(fibonacci_number)
     if not isinstance(fibonacci_number, int):
 #        print("el numero no es int")
@@ -58,4 +57,4 @@ def fibonacci(fibonacci_number):
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-print(fibonacci(10))
+# print(fibonacci(10))
